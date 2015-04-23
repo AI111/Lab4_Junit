@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter matrix size ");
         int size = scanner.nextInt();
-        SquareMatrix matrix = new SquareMatrix(SquareMatrix.genSquereMat(size));
+        SquareMatrix matrix = new SquareMatrix(MatrixUtils.genSquereMat(size));
 
         System.out.print(matrix);
         System.out.print("Enter collum index ");

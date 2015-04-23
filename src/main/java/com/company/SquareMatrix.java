@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.Arrays;
-import java.util.Random;
 
 /**
  * Created by sasha on 4/21/15.
@@ -13,18 +12,6 @@ public class SquareMatrix {
             throw new ArrayNotSquareExeption("");
         }
         this.arr=arr;
-    }
-
-    public static int[][] genSquereMat(int size) {
-        int arr[][] = new int[size][size];
-        Random random = new Random();
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                arr[i][j] = random.nextInt(1000);
-            }
-        }
-
-        return arr;
     }
 
     public int[][] getArr() {
