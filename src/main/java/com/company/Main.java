@@ -5,14 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-
-        SquareMatrix matrix = null;
-        try {
-            matrix = new SquareMatrix(SquareMatrix.genSquereMat(3));
-        } catch (ArrayNotSquareExeption arrayNotSquareExeption) {
-            arrayNotSquareExeption.printStackTrace();
-        }
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter matrix size ");
+        int size = scanner.nextInt();
+        SquareMatrix matrix = new SquareMatrix(SquareMatrix.genSquereMat(size));
+
         System.out.print(matrix);
         System.out.print("Enter collum index ");
         int col = scanner.nextInt();
@@ -23,7 +20,6 @@ public class Main {
             System.out.println("collum index not in array");
             System.exit(1);
         }
-
         System.out.print(matrix);
 
     }
